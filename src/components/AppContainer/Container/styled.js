@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const TextContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 66px;
