@@ -16,6 +16,10 @@ export const ToggleText = styled.p`
   font-size: 12px;
   display: inline-block;
   margin: 0 12px 0 0;
+
+  @media (max-width: 767px) {
+    visibility: hidden;
+  }
 `;
 
 export const ToggleButton = styled.button`
