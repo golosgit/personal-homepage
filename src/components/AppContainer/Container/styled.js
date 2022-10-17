@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const TextContainer = styled.div`
+export const Header = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
   grid-gap: 66px;
   margin-top: 115px;
 `;
@@ -13,9 +14,14 @@ export const MyImage = styled.img`
   margin: 4px 6px 10px 8px;
   border-radius: 50%;
   background-color: black;
+  grid-column: 1;
+  grid-row: 1 / 3;
 `;
 
-export const MyInfo = styled.div``;
+export const MyInfo = styled.div`
+  grid-column: 2;
+  grid-row: 1 / 3;
+`;
 
 export const Entry = styled.p`
   margin-top: 68px;

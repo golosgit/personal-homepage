@@ -13,8 +13,4 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.color.whiteLilac};
     font-family: 'Inter', sans-serif;
   }
-
-  button {
-    cursor: pointer;
-  }
 `;

@@ -1,11 +1,13 @@
-import { MyImage, MyInfo, Entry, Name, Description, HireMeLink, TextContainer } from "./styled";
+import { MyImage, MyInfo, Entry, Name, Description, HireMeLink, Header } from "./styled";
 import { ReactComponent as HireMe } from "./images/Hire me Light Motive.svg";
+import { SwitchMode } from "./SwitchMode";
 
 export const Container = () => {
   return (
     <>
-      <TextContainer>
+      <Header>
         <MyImage />
+        <SwitchMode />
         <MyInfo>
           <Entry>This is</Entry>
           <Name>Grzegorz Gołos</Name>
@@ -17,7 +19,7 @@ export const Container = () => {
             <HireMe />
           </HireMeLink>
         </MyInfo>
-      </TextContainer>
+      </Header>
     </>
   );
 };
