@@ -5,7 +5,7 @@ import { ListWrapper, List, ListItem } from "../../common/List/styled";
 export const Skillset = () => {
   return (
     <SkillsWrapper>
-      <Title>My skillset includes</Title>
+      <Title>My skillset includes 🖥️</Title>
       <ListWrapper>
         <List>
           <ListItem>HTML</ListItem>

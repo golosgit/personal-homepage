@@ -4,11 +4,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
-  margin-top: 115px;
+  margin: 115px 0 64px 0;
 
   @media (max-width: 767px) {
     grid-template-rows: 1fr;
-    margin-top: 32px;
+    margin: 32px 0 48px 0;
   }
 `;
 
