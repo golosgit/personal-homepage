@@ -45,6 +45,7 @@ export const Entry = styled.p`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 0;
   color: ${({ theme }) => theme.color.slateGray};
 
   @media (max-width: 767px) {
