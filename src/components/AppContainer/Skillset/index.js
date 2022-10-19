@@ -1,8 +1,10 @@
-import { List, ListItem, ListWrapper, Title, Wrapper } from "./styled";
+import { SkillsWrapper } from "../../common/SkillsWrapper/styled";
+import { Title } from "../../common/Title/styled";
+import { ListWrapper, List, ListItem } from "../../common/List/styled";
 
 export const Skillset = () => {
   return (
-    <Wrapper>
+    <SkillsWrapper>
       <Title>My skillset includes</Title>
       <ListWrapper>
         <List>
@@ -22,6 +24,6 @@ export const Skillset = () => {
           <ListItem>Teamwork</ListItem>
         </List>
       </ListWrapper>
-    </Wrapper>
+    </SkillsWrapper>
   );
 };

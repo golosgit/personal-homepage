@@ -1,24 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  margin-top: 64px;
-  padding: 32px;
-  border-radius: 4px;
-  background-color: ${({ theme }) => theme.color.white};
-  box-shadow: 
-    0px -2px 50px ${({ theme }) => theme.color.violet}, 
-    0px 16px 58px ${({ theme }) => theme.color.violetDarker};
-`;
-
-export const Title = styled.h2`
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
-  margin: 0;
-  padding-bottom: 16px;
-  color: ${({ theme }) => theme.color.mineShaft};
-`;
-
 export const ListWrapper = styled.div`
   background-color: white;
   border-top: 1px solid ${({ theme }) => theme.color.iron};
