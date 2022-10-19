@@ -85,10 +85,14 @@ export const HireMeLink = styled.a`
   border-radius: 4px;
 
   &:hover {
-    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff, -2px -2px 0px #8cc2ff;
+    box-shadow: 
+      2px -2px 0px ${({ theme }) => theme.color.anakiwa}, 
+      -2px 2px 0px ${({ theme }) => theme.color.anakiwa}, 
+      2px 2px 0px ${({ theme }) => theme.color.anakiwa}, 
+      -2px -2px 0px ${({ theme }) => theme.color.anakiwa};
   }
 
   &.active {
-    box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.parsley};
   }
 `;

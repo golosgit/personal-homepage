@@ -3,8 +3,12 @@ export const theme = {
     white: "#FFFFFF",
     whiteLilac: "#FBFBFE",
     iron: "#D1D5DA4D",
-    mineShaft: "#252525",
+    anakiwa: "#8CC2FF",
     slateGray: "#6E7E91",
+    mineShaft: "#252525",
+    parsley: "#14462033",
+    violet: "#090a3305",
+    violetDarker: "#090a3308",
     scienceBlue: "#0366D6",
   },
 };
