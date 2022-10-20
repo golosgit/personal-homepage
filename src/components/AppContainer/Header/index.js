@@ -1,5 +1,6 @@
-import { MyImage, MyInfo, Entry, Name, Description, HireMeLink, Container } from "./styled";
-import { ReactComponent as HireMe } from "./images/Hire me Light Motive.svg";
+import { MyImage, MyInfo, Name, Description, HireMeLink, Container } from "./styled";
+import { Caption } from "../../common/Caption/styled";
+import { ReactComponent as HireMe } from "./images/hire-me-light-motive.svg";
 import { SwitchMode } from "./SwitchMode";
 
 export const Header = () => {
@@ -9,7 +10,7 @@ export const Header = () => {
         <MyImage />
         <SwitchMode />
         <MyInfo>
-          <Entry>This is</Entry>
+          <Caption>This is</Caption>
           <Name>Grzegorz Gołos</Name>
           <Description>
             Currently I'm rebranding. Frontend is new to me, but I'm fast learner and looking for a first job in Web

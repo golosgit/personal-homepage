@@ -16,6 +16,10 @@ export const List = styled.ul`
   line-height: 25px;
   padding: 0;
   margin: 32px 0 0 0;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 `;
 
 export const ListItem = styled.li`

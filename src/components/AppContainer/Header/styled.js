@@ -40,19 +40,6 @@ export const MyInfo = styled.div`
   }
 `;
 
-export const Entry = styled.p`
-  margin-top: 68px;
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  color: ${({ theme }) => theme.color.slateGray};
-
-  @media (max-width: 767px) {
-    margin-top: 12px;
-  }
-`;
-
 export const Name = styled.h1`
   margin-top: 12px;
   font-weight: 900;
@@ -60,6 +47,7 @@ export const Name = styled.h1`
 
   @media (max-width: 767px) {
     margin-top: 8px;
+    font-size: 22px;
   }
 `;
 
@@ -75,6 +63,7 @@ export const Description = styled.p`
   @media (max-width: 767px) {
     margin-top: 16px;
     margin-bottom: 24px;
+    font-size: 17px;
   }
 `;
 

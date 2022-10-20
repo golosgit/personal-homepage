@@ -7,4 +7,8 @@ export const Title = styled.h2`
   margin: 0;
   padding-bottom: 16px;
   color: ${({ theme }) => theme.color.mineShaft};
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
