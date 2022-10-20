@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Title = styled.h2`
   font-weight: 900;
@@ -11,4 +11,10 @@ export const Title = styled.h2`
   @media (max-width: 767px) {
     font-size: 18px;
   }
+
+  ${({ portfolio }) =>
+    portfolio &&
+    css`
+      padding: 0;
+    `}
 `;
