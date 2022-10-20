@@ -8,7 +8,7 @@ export const SkillsToLearn = () => {
       <Title>What I want to learn next 🚀</Title>
       <ListWrapper>
         <List>
-          <ListItem>Maser all skills above</ListItem>
+          <ListItem>Master all skills above</ListItem>
           <ListItem>Typescript</ListItem>
         </List>
       </ListWrapper>
