@@ -7,7 +7,7 @@ export const FooterWrapper = styled.div`
 
   @media (max-width: 767px) {
     width: 90vw;
-    margin: 12 auto;
+    margin: 48px 0 32px 0;
   }
 `;
 
