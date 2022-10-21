@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   text-align: center;
-  max-width: 440px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 88px auto 0 auto;
+
+  @media (max-width: 767px) {
+    margin: 32px auto 0 auto;
+  }
 `;
 
 export const Icon = styled.span`
@@ -11,10 +15,8 @@ export const Icon = styled.span`
   color: ${({ theme }) => theme.color.mineShaft};
   width: 48px;
   height: 48px;
-  margin-top: 88px;
 
   @media (max-width: 767px) {
-    margin-top: 32px;
     width: 40px;
     height: 40px;
   }
