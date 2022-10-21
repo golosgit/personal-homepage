@@ -1,6 +1,7 @@
-import { Container, Icon, Text } from "./styled";
+import { Container, Icon} from "./styled";
+import { Text } from "../../common/Text";
+import { Title } from "../../common/Title";
 import { ReactComponent as Github } from "../../common/images/github.svg";
-import { Title } from "../../common/Title/styled";
 
 export const Portfolio = () => {
   return (

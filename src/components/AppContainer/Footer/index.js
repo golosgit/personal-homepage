@@ -1,5 +1,5 @@
-import { Caption } from "../../common/Caption/styled";
 import { FooterText, FooterWrapper, Mail, Socials } from "./styled";
+import { Caption } from "../../common/Caption";
 import { ReactComponent as Github } from "../../common/images/github.svg";
 import { ReactComponent as LinkedIN } from "../../common/images/LinkedIN.svg";
 

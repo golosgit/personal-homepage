@@ -1,6 +1,6 @@
-import { SkillsWrapper } from "../../common/SkillsWrapper/styled";
-import { Title } from "../../common/Title/styled";
-import { ListWrapper, List, ListItem } from "../../common/List/styled";
+import { SkillsWrapper } from "../../common/SkillsWrapper";
+import { Title } from "../../common/Title";
+import { ListWrapper, List, ListItem } from "../../common/List";
 
 export const Skillset = () => {
   return (
