@@ -12,9 +12,7 @@ export const Title = styled.h2`
     font-size: 18px;
   }
 
-  ${({ portfolio }) =>
-    portfolio &&
-    css`
-      padding: 0;
-    `}
+  ${({ portfolio }) => portfolio && css`
+    padding: 0;
+  `}
 `;

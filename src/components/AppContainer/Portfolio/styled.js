@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   text-align: center;
-  margin-top: 72px;
+  margin: 72px 0 24px 0;
 
   @media (max-width: 767px) {
-    margin-top: 78px;
+    margin-top: 48px;
   }
 `;
 

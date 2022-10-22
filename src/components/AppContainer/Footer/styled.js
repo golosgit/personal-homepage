@@ -30,20 +30,6 @@ export const Mail = styled.a`
   }
 `;
 
-export const FooterText = styled.p`
-  margin: 24px 0 56px 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: ${({ theme }) => theme.color.mineShaft};
-
-  @media (max-width: 767px) {
-    margin: 12px 0 40px 0;
-    font-size: 14px;
-    line-height: 17px;
-  }
-`;
-
 export const Socials = styled.a`
   display: inline-block;
   margin: 0 24px 109px 0;

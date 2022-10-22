@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <Container>
         <MyImage />
-        <SwitchMode />
+        {/* <SwitchMode /> */}
         <MyInfo>
           <Caption>This is</Caption>
           <Name>Grzegorz Gołos</Name>

@@ -8,6 +8,6 @@ export const Text = styled.p`
   line-height: 28px;
 
   @media (max-width:767px) {
-    margin: 16px 0 0 0;
+    margin: 16px 0 24px 0;
   }
 `;
