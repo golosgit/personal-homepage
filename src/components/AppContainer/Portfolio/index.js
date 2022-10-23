@@ -43,7 +43,7 @@ export const Portfolio = () => {
         <Title portfolio>Portfolio</Title>
         <Text>My recent projects</Text>
       </Container>
-      <RepoInfo />
+      <RepoInfo result={result}/>
     </>
   );
 };
