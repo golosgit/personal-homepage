@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.6424eff8.js",
+    "main.js": "/personal-homepage/static/js/main.e189174a.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/github.svg": "/personal-homepage/static/media/github.36ed7e05a09062f47706c966d4a8b7ce.svg",
     "static/media/hire-me-light-motive.svg": "/personal-homepage/static/media/hire-me-light-motive.8c59f4f690b20cae2bb7859c385c1135.svg",
@@ -8,10 +8,10 @@
     "static/media/danger.svg": "/personal-homepage/static/media/danger.91f60d1f4cf8587c84b120616987490b.svg",
     "index.html": "/personal-homepage/index.html",
     "static/media/loading.svg": "/personal-homepage/static/media/loading.63eca6f7e75e22b3e4d6c5d77764aeda.svg",
-    "main.6424eff8.js.map": "/personal-homepage/static/js/main.6424eff8.js.map",
+    "main.e189174a.js.map": "/personal-homepage/static/js/main.e189174a.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6424eff8.js"
+    "static/js/main.e189174a.js"
   ]
 }
