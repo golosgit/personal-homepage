@@ -14,7 +14,7 @@ export const useGithubRepositories = () => {
   useEffect(() => {
     const fetchGithubRepos = async () => {
       try {
-        const response = await axios.get("githubTest.json");
+        const response = await axios.get("https://api.github.com/users/golosgit/repos");
         setStatus(requestStatus.success);
         setResult(response.data);
       } catch (error) {

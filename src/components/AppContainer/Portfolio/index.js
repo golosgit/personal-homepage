@@ -1,10 +1,10 @@
 import { Container, Icon } from "./styled";
 import { Text } from "../../common/Text";
 import { Title } from "../../common/Title";
-import { Loading } from "../Loading";
-import { Error } from "../Error";
+import { Loading } from "./Loading";
+import { Error } from "./Error";
+import { RepoInfo } from "./RepoInfo";
 import { useGithubRepositories } from "../useGithubRepositories";
-import { RepoInfo } from "../RepoInfo";
 import { ReactComponent as Github } from "../../common/images/github.svg";
 
 export const Portfolio = () => {

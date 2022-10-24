@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ErrorLoadingContainer = styled.div`
+export const ErrorAndLoadingContainer = styled.div`
   text-align: center;
   max-width: 500px;
   margin: 88px auto 0 auto;

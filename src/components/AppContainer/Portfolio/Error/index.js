@@ -1,11 +1,11 @@
 import { Button, ErrorMessage, Github, Icon } from "./styled";
-import { Text } from "../../common/Text";
-import { ErrorLoadingContainer } from "../../common/ErrorLoadingContainer";
+import { Text } from "../../../common/Text";
+import { ErrorAndLoadingContainer } from "../../../common/ErrorAndLoadingContainer";
 import { ReactComponent as DangerIcon } from "./danger.svg";
 
 export const Error = () => {
   return (
-    <ErrorLoadingContainer>
+    <ErrorAndLoadingContainer>
       <Icon>
         <DangerIcon />
       </Icon>
@@ -14,6 +14,6 @@ export const Error = () => {
       <Github href="https://github.com/golosgit/">
         <Button>Go to Github</Button>
       </Github>
-    </ErrorLoadingContainer>
+    </ErrorAndLoadingContainer>
   );
 };

@@ -53,10 +53,11 @@ export const ShortTextWrapper = styled.div`
 
 export const Link = styled.a`
   overflow-wrap: anywhere;
+  text-decoration: none;
   color: ${({ theme }) => theme.color.scienceBlue};
-  border: 1px solid ${({ theme }) => theme.color.scienceBlue02};
+  border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue02};
 
   &:hover {
-    border: 1px solid ${({ theme }) => theme.color.scienceBlue08};
+    border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue08};
   }
 `;

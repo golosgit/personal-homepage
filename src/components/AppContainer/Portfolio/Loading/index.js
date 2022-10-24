@@ -1,15 +1,15 @@
 import { Icon } from "./styled";
-import { Container, ErrorLoadingContainer } from "../../common/ErrorLoadingContainer";
-import { Text } from "../../common/Text";
+import { ErrorAndLoadingContainer } from "../../../common/ErrorAndLoadingContainer";
+import { Text } from "../../../common/Text";
 import { ReactComponent as LoadingIcon } from "./loading.svg";
 
 export const Loading = () => {
   return (
-    <ErrorLoadingContainer>
+    <ErrorAndLoadingContainer>
       <Text>Please wait, projects are being loaded...</Text>
       <Icon>
         <LoadingIcon />
       </Icon>
-    </ErrorLoadingContainer>
+    </ErrorAndLoadingContainer>
   );
 };
