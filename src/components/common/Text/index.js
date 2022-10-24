@@ -9,5 +9,6 @@ export const Text = styled.p`
 
   @media (max-width:767px) {
     margin: 16px 0 24px 0;
+    font-size: 17px;
   }
 `;
