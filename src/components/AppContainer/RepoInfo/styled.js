@@ -14,8 +14,14 @@ export const GridWrapper = styled.div`
 export const RepoWrapper = styled.div`
   min-width: 300px;
   background-color: ${({ theme }) => theme.color.white};
+  border-radius: 4px;
+  border: 6px solid ${({ theme }) => theme.color.iron};
   box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violet},
     0px 16px 58px ${({ theme }) => theme.color.violetDarker};
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.color.scienceBlue02};
+  }
 `;
 
 export const Container = styled.div`
