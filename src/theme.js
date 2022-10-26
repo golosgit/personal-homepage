@@ -1,16 +1,61 @@
-export const theme = {
-  color: {
-    white: "#FFFFFF",
-    whiteLilac: "#FBFBFE",
-    iron: "#D1D5DA4D",
-    anakiwa: "#8CC2FF",
-    slateGray: "#6E7E91",
-    mineShaft: "#252525",
-    parsley: "#14462033",
-    violet: "#090a3305",
-    violetDarker: "#090a3308",
-    scienceBlue: "#0366D6",
-    scienceBlue02: "#0366D633",
-    scienceBlue08: "#0366D6CC",
+export const lightTheme = {
+  colors: {
+    body: "#FBFBFE",
+    backgroundSecondary: "#FFFFFF",
+    text: {
+      main: "#252525",
+      secondary: "#6E7E91",
+      repoName: "#0366D6",
+    },
+    button: {
+      background: "#0366D6",
+      text: "#FFFFFF",
+      border: "#D1D5DA4D",
+      shadowHover: "#8CC2FF",
+      shadowSelected: "#14462033",
+    },
+    link: {
+      text: "#0366D6",
+      border: "#0366D633",
+      borderHover: "#0366D6CC",
+    },
+    container: {
+      shadow1: "#090A3305",
+      shadow2: "#090A3308",
+      border: "#D1D5DA4D",
+      borderHover: "#0366D633",
+      listBorder: "#D1D5DA4D",
+    },
+  },
+};
+
+export const darkTheme = {
+  colors: {
+    body: "#252525",
+    backgroundSecondary: "#363636B8",
+    text: {
+      main: "#FFFFFF",
+      secondary: "#FFFFFF",
+      repoName: "#FFFFFF",
+    },
+    button: {
+      background: "#2188FF",
+      text: "#FFFFFF",
+      border: "#D1D5DA4D",
+      shadowHover: "#6D93BE",
+      shadowSelected: "#14462033",
+    },
+    link: {
+      text: "#2188FF",
+      border: "#2188FF66",
+      borderHover: "#2188FFCC",
+    },
+    container: {
+      shadow1: "#090A3305",
+      shadow2: "#090A3308",
+      border: "#D1D5DA1A",
+      borderHover: "#0366D680",
+      listBorder: "#D1D5DA4D",
+    },
   },
 };

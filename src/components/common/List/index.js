@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const ListWrapper = styled.div`
-  background-color: white;
-  border-top: 1px solid ${({ theme }) => theme.color.iron};
+  border-top: 1px solid ${({ theme }) => theme.colors.container.listBorder};
 `;
 
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.text.secondary};
   font-weight: 400;
   font-size: 18px;
   list-style: none;
@@ -33,7 +32,12 @@ export const ListItem = styled.li`
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: ${({ theme }) => theme.color.scienceBlue};
+    background: ${({ theme }) => theme.colors.link.text};
+
+    @media (max-width: 767px) {
+      /* width: 6px;
+      height: 6px; */
+    }
   }
 
   @media (max-width: 1100px) {

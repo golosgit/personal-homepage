@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Summarization = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.text.secondary};
   margin: 0 0 24px 0;
   font-weight: 400;
   font-size: 18px;
@@ -15,7 +15,7 @@ export const Summarization = styled.p`
 
   ${({ footerText }) => footerText && css` 
     margin: 24px 0 56px 0;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.colors.text.main};
 
     @media (max-width: 767px) {
       margin: 12px 0 40px 0;
@@ -25,6 +25,7 @@ export const Summarization = styled.p`
 
 export const ShortText = styled(Summarization)`
   margin: 0;
+  color: ${({ theme }) => theme.colors.text.secondary};
   display: inline-block;
 
   ${({ links }) => links && css`

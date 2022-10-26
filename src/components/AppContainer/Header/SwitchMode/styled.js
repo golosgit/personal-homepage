@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
   height: 26px;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ToggleText = styled.p`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.text.secondary};
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
@@ -19,13 +19,79 @@ export const ToggleText = styled.p`
 
   @media (max-width: 767px) {
     visibility: hidden;
+    font-size: 0px;
   }
 `;
 
-export const ToggleButton = styled.button`
+export const ToggleButton = styled.div`
+  position: relative;
   width: 48px;
   height: 26px;
-  cursor: pointer;
   border-radius: 25px;
-  border: 1px solid ${({ theme }) => theme.color.slateGray};
+  cursor: pointer;
+  border: 1px solid ${({ theme }) => theme.colors.text.secondary};
+  animation: move 1s linear forwards;
+
+  &:before,
+   :after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: move 1s linear forwards;
+  }
+
+  &:before {
+    top: 2px;
+    left: 2px;
+  }
+
+  &:after {
+    top: 2px;
+    right: 2px;
+    /* background: ${({ theme }) => theme.colors.link.text}; */
+  }
+/* 
+  &:hover {
+    animation: move 1s linear forwards;
+  }
+*/
+  &keyframes move {
+    from{
+      top: 2px;
+    left: 2px;
+    }
+    to{
+      top: 2px;
+    right: 2px;
+    }
+  } 
+`;
+
+const move = keyframes`
+    from{
+    top: 2px;
+  left: 2px;
+  }
+  to{
+    top: 2px;
+  right: 2px;
+  }
+`;
+
+export const MovingCircle = styled.span`
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: ${({ theme }) => theme.colors.text.secondary};
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  z-index: 100;
+  animation: ${move} 1s linear forwards;
+  &:hover {
+    transition-duration: 1s;
+    transform: translateX(22px);
+  }
 `;

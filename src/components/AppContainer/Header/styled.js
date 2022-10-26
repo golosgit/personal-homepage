@@ -44,6 +44,7 @@ export const Name = styled.h1`
   margin-top: 12px;
   font-weight: 900;
   font-size: 38px;
+  color: ${({ theme }) => theme.colors.text.main};
 
   @media (max-width: 767px) {
     margin-top: 8px;
@@ -58,7 +59,7 @@ export const Description = styled.p`
   font-weight: 400;
   line-height: 28px;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.text.secondary};
 
   @media (max-width: 767px) {
     margin-top: 16px;
@@ -68,6 +69,7 @@ export const Description = styled.p`
 `;
 
 export const HireMeLink = styled.a`
+  background-color: ${({ theme }) => theme.colors.button.background};
   display: flex;
   width: 154px;
   height: 49px;
@@ -75,13 +77,18 @@ export const HireMeLink = styled.a`
 
   &:hover {
     box-shadow: 
-      2px -2px 0px ${({ theme }) => theme.color.anakiwa}, 
-      -2px 2px 0px ${({ theme }) => theme.color.anakiwa}, 
-      2px 2px 0px ${({ theme }) => theme.color.anakiwa}, 
-      -2px -2px 0px ${({ theme }) => theme.color.anakiwa};
+      2px -2px 0px ${({ theme }) => theme.colors.button.shadowHover}, 
+      -2px 2px 0px ${({ theme }) => theme.colors.button.shadowHover}, 
+      2px 2px 0px ${({ theme }) => theme.colors.button.shadowHover}, 
+      -2px -2px 0px ${({ theme }) => theme.colors.button.shadowHover};
   }
 
   &.active {
-    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.parsley};
+    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.colors.button.shadowSelected};
+  }
+
+  @media (max-width: 767px) {
+    width: 138px;
+    height: 46px;
   }
 `;

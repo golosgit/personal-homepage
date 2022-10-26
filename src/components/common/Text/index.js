@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Text = styled.p`
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.text.main};
   margin: 8px 0 0 0;
   font-weight: 400;
   font-size: 20px;

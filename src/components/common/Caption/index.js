@@ -7,7 +7,7 @@ export const Caption = styled.p`
   text-transform: uppercase;
   line-height: 16px;
   letter-spacing: 0;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.colors.text.secondary};
 
   @media (max-width: 767px) {
     margin-top: 12px;

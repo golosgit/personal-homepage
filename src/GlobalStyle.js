@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.color.whiteLilac};
+    background-color: ${({ theme }) => theme.colors.body};
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;
   }

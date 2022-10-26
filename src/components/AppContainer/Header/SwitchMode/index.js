@@ -1,10 +1,12 @@
-import { Wrapper, ToggleText, ToggleButton } from "./styled";
+import { Wrapper, ToggleText, ToggleButton, MovingCircle } from "./styled";
 
 export const SwitchMode = () => {
   return (
     <Wrapper>
       <ToggleText>Dark mode off</ToggleText>
-      <ToggleButton></ToggleButton>
+      <ToggleButton>
+        <MovingCircle></MovingCircle>
+      </ToggleButton>
     </Wrapper>
   );
 };

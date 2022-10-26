@@ -5,7 +5,7 @@ export const Icon = styled.span`
   margin-top: 48px;
   width: 160px;
   height: 160px;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.link.text};
 
   @media (max-width: 767px) {
     width: 100px;

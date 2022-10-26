@@ -17,10 +17,10 @@ export const Mail = styled.a`
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.text.main};
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.link.text};
   }
 
   @media (max-width: 767px) {
@@ -35,10 +35,10 @@ export const Socials = styled.a`
   margin: 0 24px 109px 0;
   width: 48px;
   height: 48px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.text.main};
 
   &:hover {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.link.text};
   }
 
   @media (max-width: 767px) {

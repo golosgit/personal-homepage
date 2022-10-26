@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Icon = styled.span`
   display: inline-block;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.link.text};
   width: 40px;
   height: 40px;
   margin-bottom: 13px;

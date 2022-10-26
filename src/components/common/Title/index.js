@@ -6,7 +6,7 @@ export const Title = styled.h2`
   line-height: 36px;
   margin: 0;
   padding-bottom: 16px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.text.main};
 
   @media (max-width: 767px) {
     font-size: 18px;

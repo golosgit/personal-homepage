@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Icon = styled.span`
   display: inline-block;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.text.main};
   width: 48px;
   height: 48px;
 
@@ -13,6 +13,7 @@ export const Icon = styled.span`
 `;
 
 export const ErrorMessage = styled.p`
+  color: ${({ theme }) => theme.colors.text.main};
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -25,24 +26,27 @@ export const ErrorMessage = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: ${({ theme }) => theme.color.scienceBlue};
-  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.button.background};
+  color: ${({ theme }) => theme.colors.button.text};
   width: 168px;
   height: 49px;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   margin: 32px 0 0 0;
-  border: 1px solid rgba(209, 213, 218, 0.1);
+  border: 1px solid ${({ theme }) => theme.colors.button.border};
   border-radius: 4px;
 
   &:hover {
-    box-shadow: 2px -2px 0px ${({ theme }) => theme.color.anakiwa}, -2px 2px 0px ${({ theme }) => theme.color.anakiwa},
-      2px 2px 0px ${({ theme }) => theme.color.anakiwa}, -2px -2px 0px ${({ theme }) => theme.color.anakiwa};
+    box-shadow: 
+      2px -2px 0px ${({ theme }) => theme.colors.button.shadowHover}, 
+      -2px 2px 0px ${({ theme }) => theme.colors.button.shadowHover},
+      2px 2px 0px ${({ theme }) => theme.colors.button.shadowHover}, 
+      -2px -2px 0px ${({ theme }) => theme.colors.button.shadowHover};
   }
 
   &.active {
-    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.color.parsley};
+    box-shadow: inset 0px 2px 0px ${({ theme }) => theme.colors.button.shadowSelected};
   }
 
   @media (max-width: 767px) {

@@ -13,14 +13,14 @@ export const GridWrapper = styled.div`
 
 export const RepoWrapper = styled.div`
   min-width: 300px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   border-radius: 4px;
-  border: 6px solid ${({ theme }) => theme.color.iron};
-  box-shadow: 0px -2px 50px ${({ theme }) => theme.color.violet},
-    0px 16px 58px ${({ theme }) => theme.color.violetDarker};
+  border: 6px solid ${({ theme }) => theme.colors.container.border};
+  box-shadow: 0px -2px 50px ${({ theme }) => theme.colors.container.shadow1},
+    0px 16px 58px ${({ theme }) => theme.colors.container.shadow2};
 
   &:hover {
-    border: 6px solid ${({ theme }) => theme.color.scienceBlue02};
+    border: 6px solid ${({ theme }) => theme.colors.container.borderHover};
   }
 `;
 
@@ -36,7 +36,7 @@ export const Title = styled.p`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.text.repoName};
   margin: 0 0 24px 0;
 
   @media (max-width: 767px) {
@@ -54,10 +54,10 @@ export const ShortTextWrapper = styled.div`
 export const Link = styled.a`
   overflow-wrap: anywhere;
   text-decoration: none;
-  color: ${({ theme }) => theme.color.scienceBlue};
-  border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue02};
+  color: ${({ theme }) => theme.colors.link.text};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.link.border};
 
   &:hover {
-    border-bottom: 1px solid ${({ theme }) => theme.color.scienceBlue08};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.link.borderHover};
   }
 `;
