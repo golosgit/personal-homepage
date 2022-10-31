@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   height: 26px;
@@ -24,74 +24,31 @@ export const ToggleText = styled.p`
 `;
 
 export const ToggleButton = styled.div`
-  position: relative;
   width: 48px;
   height: 26px;
   border-radius: 25px;
+  position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   border: 1px solid ${({ theme }) => theme.colors.text.secondary};
-  animation: move 1s linear forwards;
-
-  &:before,
-   :after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    animation: move 1s linear forwards;
-  }
-
-  &:before {
-    top: 2px;
-    left: 2px;
-  }
-
-  &:after {
-    top: 2px;
-    right: 2px;
-    /* background: ${({ theme }) => theme.colors.link.text}; */
-  }
-/* 
-  &:hover {
-    animation: move 1s linear forwards;
-  }
-*/
-  &keyframes move {
-    from{
-      top: 2px;
-    left: 2px;
-    }
-    to{
-      top: 2px;
-    right: 2px;
-    }
-  } 
-`;
-
-const move = keyframes`
-    from{
-    top: 2px;
-  left: 2px;
-  }
-  to{
-    top: 2px;
-  right: 2px;
-  }
 `;
 
 export const MovingCircle = styled.span`
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s linear;
   width: 20px;
   height: 20px;
-  background: ${({ theme }) => theme.colors.text.secondary};
+  color: ${({ theme }) => theme.colors.toggleIcon};
+  background-color: ${({ theme }) => theme.colors.text.secondary};
   border-radius: 50%;
   top: 2px;
   left: 2px;
-  z-index: 100;
-  animation: ${move} 1s linear forwards;
-  &:hover {
-    transition-duration: 1s;
-    transform: translateX(22px);
-  }
+
+  ${({ toggleOn }) => toggleOn && css`
+    left: 24px;
+  `}
 `;
