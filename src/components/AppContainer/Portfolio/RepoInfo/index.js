@@ -7,7 +7,7 @@ export const RepoInfo = (result) => {
   return (
     <GridWrapper>
       {results.map(repository => (
-        <RepoWrapper>
+        <RepoWrapper key={repository.id}>
           <Container>
             <Title>{repository.name}</Title>
             <Summarization>{repository.description}</Summarization>

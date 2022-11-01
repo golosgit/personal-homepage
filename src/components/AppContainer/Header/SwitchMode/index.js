@@ -1,18 +1,16 @@
-import { useState } from "react";
-
+import { useTheme } from "../../../../useTheme";
 import { Wrapper, ToggleText, ToggleButton, MovingCircle } from "./styled";
 import { ReactComponent as Icon } from "./toggle-icon.svg";
 
 export const SwitchMode = () => {
-  const [toggleOn, setToggleOn] = useState(false);
+  const { theme, toggleOn, toggleTheme } = useTheme();
 
-  const SwitchMode = () => 
-    toggleOn === false ? setToggleOn(true) : setToggleOn(false);
+  console.log(`Toggle theme - ${theme}`);
 
   return (
     <Wrapper>
-      <ToggleText>Dark mode off</ToggleText>
-      <ToggleButton onClick={SwitchMode}>
+      <ToggleText>Dark mode {toggleOn ? "on" : "off"}</ToggleText>
+      <ToggleButton onClick={toggleTheme}>
         <MovingCircle toggleOn={toggleOn}>
           <Icon />
         </MovingCircle>
