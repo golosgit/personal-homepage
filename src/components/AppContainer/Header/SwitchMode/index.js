@@ -3,9 +3,7 @@ import { Wrapper, ToggleText, ToggleButton, MovingCircle } from "./styled";
 import { ReactComponent as Icon } from "./toggle-icon.svg";
 
 export const SwitchMode = () => {
-  const { theme, toggleOn, toggleTheme } = useTheme();
-
-  console.log(`Toggle theme - ${theme}`);
+  const { toggleOn, toggleTheme } = useTheme();
 
   return (
     <Wrapper>
