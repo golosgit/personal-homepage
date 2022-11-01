@@ -12,6 +12,8 @@ import { useTheme } from "./useTheme";
 export const App = () => {
   const { theme } = useTheme();
 
+  console.log(theme);
+
   const setTheme = () => (theme === "light" ? light : dark);
 
   return (

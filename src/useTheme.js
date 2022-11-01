@@ -18,7 +18,6 @@ export const useTheme = () => {
   };
 
   useEffect(() => {
-    console.log("test");
     const localTheme = getThemeFromLocalStorage();
     if (localTheme === "light") {
       setTheme("light");
@@ -27,7 +26,9 @@ export const useTheme = () => {
       setTheme("dark");
       setToggleOn(true);
     }
-  }, []);
+  });
+
+  console.log(theme);
 
   return { theme, toggleOn, toggleTheme };
 };
