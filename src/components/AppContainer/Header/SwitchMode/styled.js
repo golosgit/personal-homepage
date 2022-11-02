@@ -48,7 +48,7 @@ export const MovingCircle = styled.span`
   top: 2px;
   left: 2px;
 
-  ${({ toggleOn }) => toggleOn && css`
+  ${({ toggleButton }) => toggleButton && css`
     left: 24px;
   `}
 `;
