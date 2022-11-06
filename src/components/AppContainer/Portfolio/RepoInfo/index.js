@@ -1,12 +1,14 @@
+import { useSelector } from "react-redux";
 import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
 import { Summarization, ShortText } from "../../../common/Summarization";
+import { selectRepositories } from "../../../../slice";
 
-export const RepoInfo = (result) => {
-  const results = result.result;
+export const RepoInfo = () => {
+  const repositories = useSelector(selectRepositories);
 
   return (
     <GridWrapper>
-      {results.map(repository => (
+      {repositories.map(repository => (
         <RepoWrapper key={repository.id}>
           <Container>
             <Title>{repository.name}</Title>
