@@ -4,8 +4,8 @@ import { getGithubRepositories } from "./getGithubRepositories";
 import { 
   fetchGithubRepositories, 
   fetchGithubRepositoriesError, 
+  fetchGithubRepositoriesSuccess, 
   selectTheme, 
-  setRepositories, 
   toggleTheme
 } from "./slice";
 
@@ -14,7 +14,7 @@ function* fetchGithubRepositoriesHandler() {
   try {
     yield delay(4000);
     const repositories = yield call(getGithubRepositories);
-    yield put(setRepositories(repositories));
+    yield put(fetchGithubRepositoriesSuccess(repositories));
   } catch (error) {
     yield put(fetchGithubRepositoriesError());
   }

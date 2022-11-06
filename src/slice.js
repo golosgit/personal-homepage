@@ -20,7 +20,7 @@ const themeSlice = createSlice({
       state.loading = false;
       state.error = true;
     },
-    setRepositories: (state, { payload: repositories }) => {
+    fetchGithubRepositoriesSuccess: (state, { payload: repositories }) => {
       state.loading = false;
       state.repositories = repositories;
     },
@@ -31,7 +31,7 @@ export const {
   toggleTheme, 
   fetchGithubRepositories, 
   fetchGithubRepositoriesError,
-  setRepositories 
+  fetchGithubRepositoriesSuccess
 } = themeSlice.actions;
 
 export const selectThemeState = state => state.themeState;
