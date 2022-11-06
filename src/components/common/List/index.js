@@ -27,7 +27,7 @@ export const ListItem = styled.li`
 
   &:before {
     content: "";
-    margin-right: 16px;
+    margin: 0 16px 2px 0;
     display: inline-block;
     width: 9px;
     height: 9px;
@@ -35,8 +35,8 @@ export const ListItem = styled.li`
     background: ${({ theme }) => theme.colors.link.text};
 
     @media (max-width: 767px) {
-      /* width: 6px;
-      height: 6px; */
+      width: 6px;
+      height: 6px;
     }
   }
 

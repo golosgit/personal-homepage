@@ -17,7 +17,7 @@ export const MyImage = styled.img`
   height: 384px;
   margin: 4px 6px 10px 8px;
   border-radius: 50%;
-  background-color: black;
+  background-color: ${({ theme }) => theme.colors.container.border};
   grid-column: 1;
   grid-row: 1 / 3;
 
