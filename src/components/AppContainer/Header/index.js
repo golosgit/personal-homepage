@@ -5,22 +5,20 @@ import { ReactComponent as HireMe } from "./hire-me.svg";
 
 export const Header = () => {
   return (
-    <>
-      <Container>
-        <MyImage />
-        <SwitchMode />
-        <MyInfo>
-          <Caption>This is</Caption>
-          <Name>Grzegorz Gołos</Name>
-          <Description>
-            Currently I'm rebranding. Frontend is new to me, but I'm fast learner and looking for a first job in Web
-            Development.
-          </Description>
-          <HireMeLink href="mailto:grzegorz.golos@gmail.com">
-            <HireMe />
-          </HireMeLink>
-        </MyInfo>
-      </Container>
-    </>
+    <Container>
+      <MyImage />
+      <SwitchMode />
+      <MyInfo>
+        <Caption>This is</Caption>
+        <Name>Grzegorz Gołos</Name>
+        <Description>
+          Currently I'm rebranding. Frontend is new to me, but I'm fast learner and looking for a first job in Web
+          Development.
+        </Description>
+        <HireMeLink href="mailto:grzegorz.golos@gmail.com">
+          <HireMe />
+        </HireMeLink>
+      </MyInfo>
+    </Container>
   );
 };

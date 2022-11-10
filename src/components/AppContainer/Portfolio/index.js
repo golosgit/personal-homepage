@@ -17,29 +17,25 @@ export const Portfolio = () => {
     dispatch(fetchGithubRepositories());
 
     return (
-      <>
-        <Container>
-          <Icon>
-            <Github />
-          </Icon>
-          <Title portfolio>Portfolio</Title>
-          <Text>My recent projects</Text>
-          <Loading />
-        </Container>
-      </>
+      <Container>
+        <Icon>
+          <Github />
+        </Icon>
+        <Title portfolio>Portfolio</Title>
+        <Text>My recent projects</Text>
+        <Loading />
+      </Container>
     );
   } else if (error) {
     return (
-      <>
-        <Container>
-          <Icon>
-            <Github />
-          </Icon>
-          <Title portfolio>Portfolio</Title>
-          <Text>My recent projects</Text>
-          <Error />
-        </Container>
-      </>
+      <Container>
+        <Icon>
+          <Github />
+        </Icon>
+        <Title portfolio>Portfolio</Title>
+        <Text>My recent projects</Text>
+        <Error />
+      </Container>
     );
   }
   return (
