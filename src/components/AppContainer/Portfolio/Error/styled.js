@@ -36,6 +36,7 @@ export const Button = styled.button`
   margin: 32px 0 0 0;
   border: 1px solid ${({ theme }) => theme.colors.button.border};
   border-radius: 4px;
+  transition: 0.3s;
 
   &:hover {
     box-shadow: 

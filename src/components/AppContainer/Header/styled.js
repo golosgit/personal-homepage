@@ -74,6 +74,7 @@ export const HireMeLink = styled.a`
   width: 154px;
   height: 49px;
   border-radius: 4px;
+  transition: 0.3s;
 
   &:hover {
     box-shadow: 

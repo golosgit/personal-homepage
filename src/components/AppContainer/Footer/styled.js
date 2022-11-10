@@ -18,6 +18,7 @@ export const Mail = styled.a`
   font-size: 32px;
   line-height: 39px;
   color: ${({ theme }) => theme.colors.text.main};
+  transition: 0.3s;
 
   &:hover {
     color: ${({ theme }) => theme.colors.link.text};
@@ -36,6 +37,7 @@ export const Socials = styled.a`
   width: 48px;
   height: 48px;
   color: ${({ theme }) => theme.colors.text.main};
+  transition: 0.3s;
 
   &:hover {
     color: ${({ theme }) => theme.colors.link.text};

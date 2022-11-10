@@ -15,6 +15,7 @@ export const RepoWrapper = styled.div`
   min-width: 300px;
   background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   border-radius: 4px;
+  transition: 0.3s;
   border: 6px solid ${({ theme }) => theme.colors.container.border};
   box-shadow: 0px -2px 50px ${({ theme }) => theme.colors.container.shadow1},
     0px 16px 58px ${({ theme }) => theme.colors.container.shadow2};
@@ -56,6 +57,7 @@ export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.link.text};
   border-bottom: 1px solid ${({ theme }) => theme.colors.link.border};
+  transition: 0.3s;
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.colors.link.borderHover};
