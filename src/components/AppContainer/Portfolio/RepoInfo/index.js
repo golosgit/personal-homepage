@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
 import { Summarization, ShortText } from "../../../common/Summarization";
-import { selectRepositories } from "../../../../slice";
+import { selectRepositories } from "../../slice";
 
 export const RepoInfo = () => {
   const repositories = useSelector(selectRepositories);

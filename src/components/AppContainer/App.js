@@ -1,15 +1,15 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "./GlobalStyle";
-import { AppContainer } from "./components/AppContainer";
-import { Footer } from "./components/AppContainer/Footer";
-import { Header } from "./components/AppContainer/Header";
-import { Portfolio } from "./components/AppContainer/Portfolio";
-import { Skills } from "./components/AppContainer/Skills";
+import { GlobalStyle } from "../../GlobalStyle";
+import { AppContainer } from ".";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
+import { Portfolio } from "./Portfolio";
+import { Skills } from "./Skills";
 import { selectTheme } from "./slice";
 import { light, dark } from "./theme";
-import skillsLearned from "./skillsLearned";
-import skillsToLearn from "./skillsToLearn";
+import skillsLearned from "./Skills/skillsLearned";
+import skillsToLearn from "./Skills/skillsToLearn";
 
 export const App = () => {
   const theme = useSelector(selectTheme);

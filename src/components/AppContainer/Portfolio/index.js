@@ -5,7 +5,7 @@ import { Title } from "../../common/Title";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 import { RepoInfo } from "./RepoInfo";
-import { fetchGithubRepositories, selectErrorState, selectLoadingState } from "../../../slice";
+import { fetchGithubRepositories, selectErrorState, selectLoadingState } from "../slice";
 import { ReactComponent as Github } from "../../common/images/github.svg";
 
 export const Portfolio = () => {
