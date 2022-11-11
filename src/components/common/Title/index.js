@@ -12,7 +12,12 @@ export const Title = styled.h2`
     font-size: 18px;
   }
 
+  @media (max-width: 370px) {
+    max-width: 240px;
+  }
+
   ${({ portfolio }) => portfolio && css`
     padding: 0;
+    margin: 0 auto;
   `}
 `;
