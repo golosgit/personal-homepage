@@ -12,7 +12,7 @@ import {
 
 function* fetchGithubRepositoriesHandler() {
   try {
-    yield delay(4000);
+    yield delay(2000);
     const repositories = yield call(getGithubRepositories);
     yield put(fetchGithubRepositoriesSuccess(repositories));
   } catch (error) {
