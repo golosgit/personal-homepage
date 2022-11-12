@@ -15,39 +15,17 @@ export const Portfolio = () => {
 
   if (loading) {
     dispatch(fetchGithubRepositories());
-
-    return (
-      <Container>
-        <Icon>
-          <Github />
-        </Icon>
-        <Title portfolio>Portfolio</Title>
-        <Text>My recent projects</Text>
-        <Loading />
-      </Container>
-    );
-  } else if (error) {
-    return (
-      <Container>
-        <Icon>
-          <Github />
-        </Icon>
-        <Title portfolio>Portfolio</Title>
-        <Text>My recent projects</Text>
-        <Error />
-      </Container>
-    );
   }
+
   return (
-    <>
-      <Container>
-        <Icon>
-          <Github />
-        </Icon>
-        <Title portfolio>Portfolio</Title>
-        <Text>My recent projects</Text>
-      </Container>
-      <RepoInfo />
-    </>
+    <Container>
+      <Icon>
+        <Github />
+      </Icon>
+      <Title portfolio>Portfolio</Title>
+      <Text>My recent projects</Text>
+      {loading ? <Loading /> : 
+        error ? <Error /> : <RepoInfo />}
+    </Container>
   );
 };

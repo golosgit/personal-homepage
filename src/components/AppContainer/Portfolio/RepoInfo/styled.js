@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const GridWrapper = styled.div`
+  margin-top: 24px;
+  text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
