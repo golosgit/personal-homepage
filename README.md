@@ -26,4 +26,4 @@ Project was created with:
 
 ## Website appearance
 
-![Website appearance](https://raw.githubusercontent.com/golosgit/personal-homepage/public/personal_homepage.png)
+![Website appearance](https://raw.githubusercontent.com/golosgit/personal-homepage/main/public/personal_homepage.png)
