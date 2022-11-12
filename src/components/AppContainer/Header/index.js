@@ -1,12 +1,13 @@
 import { MyImage, MyInfo, Name, Description, HireMeLink, Container } from "./styled";
 import { Caption } from "../../common/Caption";
 import { SwitchMode } from "./SwitchMode";
-import { ReactComponent as HireMe } from "./hire-me.svg";
+import { ReactComponent as HireMe } from "./hire_me.svg";
+import image from "./my_image.png";
 
 export const Header = () => {
   return (
     <Container>
-      <MyImage />
+      <MyImage src={image} alt="My image"/>
       <SwitchMode />
       <MyInfo>
         <Caption>This is</Caption>
