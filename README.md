@@ -3,6 +3,7 @@
 - [Demo](#demo)
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Website appearance](#appearance)
 
 ## Demo
 
@@ -10,7 +11,7 @@ https://golosgit.github.io/personal-homepage/
 
 ## General info
 
-Personal homepage that presents acquired skills and sample projects.
+Personal homepage that presents acquired skills and sample projects. Projects are fetched from GitHub. It is possible to switch between light and dark modes.
 
 ## Technologies
 
@@ -22,3 +23,7 @@ Project was created with:
 - CSS (media queries, grid, flexbox)
 - React (Create-React-App, Redux Toolkit, Redux Saga)
 - Styled Components and ThemeProvider
+
+## Website appearance
+
+![Website appearance](https://raw.githubusercontent.com/golosgit/personal-homepage/public/personal_homepage.png)
