@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../../GlobalStyle";
-import { AppContainer } from ".";
+import { AppContainer } from "./styled";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Portfolio } from "./Portfolio";
