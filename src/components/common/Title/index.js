@@ -12,7 +12,7 @@ export const Title = styled.h2`
     font-size: 18px;
   }
 
-  @media (max-width: 370px) {
+  @media (max-width: 390px) {
     max-width: 240px;
   }
 
