@@ -16,6 +16,10 @@ export const Title = styled.h2`
     max-width: 240px;
   }
 
+  @media (max-width: 340px) {
+    max-width: 190px;
+  }
+
   ${({ portfolio }) => portfolio && css`
     padding: 0;
     margin: 0 auto;

@@ -14,7 +14,6 @@ export const GridWrapper = styled.div`
 `;
 
 export const RepoWrapper = styled.div`
-  min-width: 300px;
   background-color: ${({ theme }) => theme.colors.backgroundSecondary};
   border-radius: 4px;
   transition: 0.3s;
