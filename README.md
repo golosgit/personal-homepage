@@ -3,7 +3,7 @@
 - [Demo](#demo)
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Website appearance](#appearance)
+- [Website appearance](#website-appearance)
 
 ## Demo
 
