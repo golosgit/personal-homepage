@@ -1,5 +1,6 @@
 const skillsLearned = [
   "HTML",
+  "Responsive Web Design",
   "CSS BEM convention",
   "CSS Flexbox",
   "CSS Grid",

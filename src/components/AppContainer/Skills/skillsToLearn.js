@@ -1,6 +1,7 @@
 const skillsToLearn = [
   "Master all skills above",
-  "Typescript"
+  "Typescript",
+  "React Query",
 ];
 
 export default skillsToLearn;
