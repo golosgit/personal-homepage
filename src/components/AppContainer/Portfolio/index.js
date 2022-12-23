@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Container, Icon } from "./styled";
 import { Text } from "../../common/Text";
@@ -5,17 +6,16 @@ import { Title } from "../../common/Title";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 import { RepoInfo } from "./RepoInfo";
-import { fetchGithubRepositories, selectErrorState, selectLoadingState } from "../slice";
+import { fetchGithubRepositories, selectStatus } from "../slice";
 import { ReactComponent as Github } from "../../common/images/github.svg";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const loading = useSelector(selectLoadingState);
-  const error = useSelector(selectErrorState);
+  const status = useSelector(selectStatus);
 
-  if (loading) {
+  useEffect(() => {
     dispatch(fetchGithubRepositories());
-  }
+  }, [dispatch]);
 
   return (
     <Container>
@@ -24,8 +24,9 @@ export const Portfolio = () => {
       </Icon>
       <Title portfolio>Portfolio</Title>
       <Text>My recent projects</Text>
-      {loading ? <Loading /> : 
-        error ? <Error /> : <RepoInfo />}
+      {status === "initial" ? "" :
+        status === "loading" ? <Loading /> : 
+          status === "error" ? <Error /> : <RepoInfo />}
     </Container>
   );
 };

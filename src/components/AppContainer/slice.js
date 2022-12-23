@@ -6,8 +6,7 @@ const themeSlice = createSlice({
   initialState: {
     theme: getThemeFromLocalStorage(),
     toggleButton: getThemeFromLocalStorage() === "light" ? false : true,
-    loading: true,
-    error: false,
+    status: "initial",
     repositories: [],
   },
   reducers: {
@@ -15,13 +14,14 @@ const themeSlice = createSlice({
       state.theme === "light" ? (state.theme = "dark") : (state.theme = "light");
       state.toggleButton = !state.toggleButton;
     },
-    fetchGithubRepositories: () => {},
+    fetchGithubRepositories: state => {
+      state.status = "loading";
+    },
     fetchGithubRepositoriesError: state => {
-      state.loading = false;
-      state.error = true;
+      state.status = "error";
     },
     fetchGithubRepositoriesSuccess: (state, { payload: repositories }) => {
-      state.loading = false;
+      state.status = "success";
       state.repositories = repositories;
     },
   },
@@ -38,8 +38,7 @@ export const selectThemeState = state => state.themeState;
 
 export const selectTheme = state => selectThemeState(state).theme;
 export const selectStateOfToggleButton = state => selectThemeState(state).toggleButton;
-export const selectLoadingState = state => selectThemeState(state).loading;
-export const selectErrorState = state => selectThemeState(state).error;
+export const selectStatus = state => selectThemeState(state).status;
 export const selectRepositories = state => selectThemeState(state).repositories;
 
 export default themeSlice.reducer;
