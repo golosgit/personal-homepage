@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Caption = styled.p`
-  margin-top: 68px 0 0 0;
+  margin: 68px 0 0 0;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
