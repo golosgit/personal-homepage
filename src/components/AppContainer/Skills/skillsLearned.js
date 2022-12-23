@@ -4,7 +4,6 @@ const skillsLearned = [
   "CSS BEM convention",
   "CSS Flexbox",
   "CSS Grid",
-  "Responsive Web Design",
   "React",
   "React Hooks",
   "React Router",
