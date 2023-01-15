@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
   width: 691px;
   margin-top: 120px;
-  overflow-wrap: anywhere;
 
   @media (max-width: 767px) {
     width: 90vw;

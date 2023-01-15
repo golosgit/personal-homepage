@@ -54,7 +54,6 @@ export const ShortTextWrapper = styled.div`
 `;
 
 export const Link = styled.a`
-  overflow-wrap: anywhere;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.link.text};
   border-bottom: 1px solid ${({ theme }) => theme.colors.link.border};

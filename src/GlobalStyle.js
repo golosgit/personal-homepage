@@ -15,5 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;
     transition: background-color 0.2s linear;
+    overflow-wrap: anywhere;
   }
 `;
