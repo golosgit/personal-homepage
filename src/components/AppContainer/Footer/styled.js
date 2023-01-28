@@ -12,7 +12,8 @@ export const FooterWrapper = styled.div`
 
 export const Mail = styled.a`
   text-decoration: none;
-  margin: 24px 0 0 0;
+  display: block;
+  margin: 24px 0 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 1.2;
