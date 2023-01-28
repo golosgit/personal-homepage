@@ -16,7 +16,7 @@ export const ErrorMessage = styled.p`
   color: ${({ theme }) => theme.colors.text.main};
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   margin: 24px 0 32px 0;
 
   @media (max-width: 767px) {
@@ -32,7 +32,7 @@ export const Button = styled.button`
   height: 49px;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   margin: 32px 0 0 0;
   border: 1px solid ${({ theme }) => theme.colors.button.border};
   border-radius: 4px;

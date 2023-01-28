@@ -5,11 +5,11 @@ export const Summarization = styled.p`
   margin: 0 0 24px 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
 
   @media (max-width: 767px) {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     margin: 0 0 16px 0;
   }
 

@@ -31,7 +31,7 @@ export const List = styled.ul`
   font-weight: 400;
   font-size: 18px;
   list-style: none;
-  line-height: 25px;
+  line-height: 1.4;
   padding: 0;
   margin: 32px 0 0 0;
 

@@ -37,14 +37,13 @@ export const Container = styled.div`
 export const Title = styled.p`
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   color: ${({ theme }) => theme.colors.text.repoName};
   margin: 0 0 24px 0;
 
   @media (max-width: 767px) {
     margin-bottom: 16px;
     font-size: 16px;
-    line-height: 19px;
   }
 `;
 

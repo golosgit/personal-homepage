@@ -5,7 +5,7 @@ export const Caption = styled.p`
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  line-height: 16px;
+  line-height: 1.3;
   letter-spacing: 0;
   color: ${({ theme }) => theme.colors.text.secondary};
 

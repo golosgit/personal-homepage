@@ -15,7 +15,7 @@ export const Mail = styled.a`
   margin: 24px 0 0 0;
   font-weight: 900;
   font-size: 32px;
-  line-height: 39px;
+  line-height: 1.2;
   color: ${({ theme }) => theme.colors.text.main};
   transition: 0.3s;
 
@@ -26,7 +26,6 @@ export const Mail = styled.a`
   @media (max-width: 767px) {
     margin: 12px 0 0 0;
     font-size: 18px;
-    line-height: 22px;
   }
 `;
 

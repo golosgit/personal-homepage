@@ -57,7 +57,7 @@ export const Description = styled.p`
   margin-bottom: 32px;
   max-width: 680px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.4;
   font-size: 20px;
   color: ${({ theme }) => theme.colors.text.secondary};
 
