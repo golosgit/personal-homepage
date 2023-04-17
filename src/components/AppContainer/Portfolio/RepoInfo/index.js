@@ -1,26 +1,29 @@
-import { useSelector } from "react-redux";
 import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
 import { Summarization, ShortText } from "../../../common/Summarization";
-import { selectRepositories } from "../../slice";
+import { fetchRepositories } from "../../fetchRepositories";
+import { useQuery } from "@tanstack/react-query";
 
 export const RepoInfo = () => {
-  const repositories = useSelector(selectRepositories);
+  const { data } = useQuery(
+    ["repositories"], 
+    fetchRepositories
+  );
 
   return (
     <GridWrapper>
-      {repositories.map(repository => (
-        <RepoWrapper key={repository.id}>
+      {data?.map(repository => (
+        <RepoWrapper key={repository?.id}>
           <Container>
-            <Title>{repository.name}</Title>
-            <Summarization>{repository.description}</Summarization>
+            <Title>{repository?.name}</Title>
+            <Summarization>{repository?.description}</Summarization>
             <ShortTextWrapper>
               <ShortText>Demo:</ShortText>
               <ShortText links>
-                <Link href={repository.homepage}>{repository.homepage}</Link>
+                <Link href={repository?.homepage}>{repository?.homepage}</Link>
               </ShortText>
               <ShortText>Code:</ShortText>
               <ShortText links>
-                <Link href={repository.html_url}>{repository.html_url}</Link>
+                <Link href={repository?.html_url}>{repository?.html_url}</Link>
               </ShortText>
             </ShortTextWrapper>
           </Container>

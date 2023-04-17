@@ -1,21 +1,15 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Container, Icon } from "./styled";
+import { useQuery } from "@tanstack/react-query";
 import { Text } from "../../common/Text";
 import { Title } from "../../common/Title";
-import { Loading } from "./Loading";
-import { Error } from "./Error";
-import { RepoInfo } from "./RepoInfo";
-import { fetchGithubRepositories, selectStatus } from "../slice";
 import { ReactComponent as Github } from "../../common/images/github.svg";
+import { fetchRepositories } from "../fetchRepositories";
+import { Error } from "./Error";
+import { Loading } from "./Loading";
+import { RepoInfo } from "./RepoInfo";
+import { Container, Icon } from "./styled";
 
 export const Portfolio = () => {
-  const dispatch = useDispatch();
-  const status = useSelector(selectStatus);
-
-  useEffect(() => {
-    dispatch(fetchGithubRepositories());
-  }, [dispatch]);
+  const { isLoading, error } = useQuery(["repositories"], fetchRepositories);
 
   return (
     <Container>
@@ -24,9 +18,9 @@ export const Portfolio = () => {
       </Icon>
       <Title portfolio>Portfolio</Title>
       <Text>My recent projects</Text>
-      {status === "initial" ? "" :
-        status === "loading" ? <Loading /> : 
-          status === "error" ? <Error /> : <RepoInfo />}
+      {isLoading ? <Loading /> : 
+        error ? <Error /> : <RepoInfo />
+      }
     </Container>
   );
 };
