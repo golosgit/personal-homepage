@@ -1,7 +1,7 @@
-import { Icon } from "./styled";
 import { ErrorAndLoadingContainer } from "../../../common/ErrorAndLoadingContainer";
 import { Text } from "../../../common/Text";
 import { ReactComponent as LoadingIcon } from "./loading.svg";
+import { Icon } from "./styled";
 
 export const Loading = () => {
   return (

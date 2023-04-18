@@ -9,6 +9,7 @@ const skillsLearned = [
   "React Router",
   "Redux (Toolkit)",
   "Redux Saga",
+  "Tanstack Query",
   "Working with API (fetch, axios)",
   "Error Handling",
   "Markdown",

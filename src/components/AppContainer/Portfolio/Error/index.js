@@ -1,7 +1,7 @@
-import { Button, ErrorMessage, Github, Icon } from "./styled";
-import { Text } from "../../../common/Text";
 import { ErrorAndLoadingContainer } from "../../../common/ErrorAndLoadingContainer";
+import { Text } from "../../../common/Text";
 import { ReactComponent as DangerIcon } from "./danger.svg";
+import { Button, ErrorMessage, Github, Icon } from "./styled";
 
 export const Error = () => {
   return (

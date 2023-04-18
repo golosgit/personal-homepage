@@ -1,17 +1,14 @@
-import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
+import { useQuery } from "@tanstack/react-query";
 import { Summarization, ShortText } from "../../../common/Summarization";
 import { fetchRepositories } from "../../fetchRepositories";
-import { useQuery } from "@tanstack/react-query";
+import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
 
 export const RepoInfo = () => {
-  const { data } = useQuery(
-    ["repositories"], 
-    fetchRepositories
-  );
+  const { data } = useQuery(["repositories"], fetchRepositories);
 
   return (
     <GridWrapper>
-      {data?.map(repository => (
+      {data?.map((repository) => (
         <RepoWrapper key={repository?.id}>
           <Container>
             <Title>{repository?.name}</Title>

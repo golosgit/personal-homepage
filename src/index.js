@@ -13,19 +13,19 @@ const queryClient = new QueryClient({
     queries: {
       staleTime: 1000 * 60 * 10,
       cacheTime: 1000 * 60 * 15,
-    }
-  }
+    },
+  },
 });
 
 root.render(
-  // <React.StrictMode>
-  <QueryClientProvider client={queryClient}>
-    <ReactQueryDevtools />
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </QueryClientProvider>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools />
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </QueryClientProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

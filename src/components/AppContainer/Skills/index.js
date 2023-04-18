@@ -1,5 +1,5 @@
-import { SkillsWrapper, ListWrapper, List, ListItem } from "./styled";
 import { Title } from "../../common/Title";
+import { SkillsWrapper, ListWrapper, List, ListItem } from "./styled";
 
 export const Skills = ({ nextList, title, skills }) => {
   return (
@@ -8,7 +8,7 @@ export const Skills = ({ nextList, title, skills }) => {
       <ListWrapper>
         <List>
           {skills.map((skill) => (
-            <ListItem key={skill}>{skill}</ListItem>  
+            <ListItem key={skill}>{skill}</ListItem>
           ))}
         </List>
       </ListWrapper>
