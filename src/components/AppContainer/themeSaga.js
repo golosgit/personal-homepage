@@ -1,24 +1,6 @@
-import { call, select, takeEvery, put, delay } from "redux-saga/effects";
+import { call, select, takeEvery } from "redux-saga/effects";
+import { selectTheme, toggleTheme } from "./slice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
-import { getGithubRepositories } from "./getGithubRepositories";
-import { 
-  fetchGithubRepositories, 
-  fetchGithubRepositoriesError, 
-  fetchGithubRepositoriesSuccess, 
-  selectTheme, 
-  toggleTheme
-} from "./slice";
-
-
-function* fetchGithubRepositoriesHandler() {
-  try {
-    yield delay(1000);
-    const repositories = yield call(getGithubRepositories);
-    yield put(fetchGithubRepositoriesSuccess(repositories));
-  } catch (error) {
-    yield put(fetchGithubRepositoriesError());
-  }
-}
 
 function* saveThemeInLocalStorageHandler() {
   const theme = yield select(selectTheme);
@@ -26,6 +8,5 @@ function* saveThemeInLocalStorageHandler() {
 }
 
 export function* themeSaga() {
-  yield takeEvery(fetchGithubRepositories.type, fetchGithubRepositoriesHandler);
-  yield takeEvery(toggleTheme, saveThemeInLocalStorageHandler);
+  yield takeEvery(toggleTheme.type, saveThemeInLocalStorageHandler);
 }
