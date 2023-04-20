@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectStateOfToggleButton, toggleTheme } from "../../slice";
+import { selectStateOfToggleButton, toggleTheme } from "../../../core/slice";
 import { Wrapper, ToggleText, ToggleButton, MovingCircle } from "./styled";
 import { ReactComponent as Icon } from "./toggle_icon.svg";
 

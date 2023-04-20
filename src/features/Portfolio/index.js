@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
+import { Error } from "./Error";
+import { Loading } from "./Loading";
 import { Text } from "../../common/Text";
 import { Title } from "../../common/Title";
 import { ReactComponent as Github } from "../../common/images/github.svg";
-import { fetchRepositories } from "../fetchRepositories";
-import { Error } from "./Error";
-import { Loading } from "./Loading";
+import { fetchRepositories } from "../../core/fetchRepositories";
 import { RepoInfo } from "./RepoInfo";
 import { Container, Icon } from "./styled";
 
@@ -19,7 +19,8 @@ export const Portfolio = () => {
       <Title portfolio>Portfolio</Title>
       <Text>My recent projects</Text>
       {isLoading ? <Loading /> : 
-        error ? <Error /> : <RepoInfo />
+        error ? <Error /> : 
+          <RepoInfo />
       }
     </Container>
   );

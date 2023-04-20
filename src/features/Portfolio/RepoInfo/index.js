@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Summarization, ShortText } from "../../../common/Summarization";
-import { fetchRepositories } from "../../fetchRepositories";
+import { fetchRepositories } from "../../../core/fetchRepositories";
 import { Container, GridWrapper, Link, RepoWrapper, ShortTextWrapper, Title } from "./styled";
 
 export const RepoInfo = () => {
